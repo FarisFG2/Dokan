@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navi {
+    background-color: #576067;
+}
+.more {
+    background-color: #576067;
+}
+.navi div a {
+    transition: 0.4s;
+}
+.navi div .page:hover {
+    background-color: rgb(12, 145, 12);
+    
+    border-radius: 5rem;
+    transform: scale(0.8);
+    text-transform: uppercase;
+}
+.navi div .home:hover {
+    color: rgb(248, 249, 250) !important;
+}
+.navi div .drop:hover {
+    background-color: rgb(12, 145, 12);
+    
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+}
+.slides img {
+    filter: brightness(40%);
+}
+.deal {
+    width: 35%;
+}
+@media screen and (max-width: 768px) {
+    .deal {
+        width: 50%;
+        
+    }
+}
