@@ -6,7 +6,8 @@
 .navi {
     background-color: #576067;
 }
-.more {
+.more,
+.foot {
     background-color: #576067;
 }
 .navi div a {
@@ -33,6 +34,9 @@
 }
 .deal {
     width: 35%;
+}
+.logo {
+    font-size: 6rem;
 }
 @media screen and (max-width: 768px) {
     .deal {
