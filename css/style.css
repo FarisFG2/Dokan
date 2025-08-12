@@ -38,9 +38,64 @@
 .logo {
     font-size: 6rem;
 }
+.login,
+.signup {
+    background-color: #f3f3f3;
+}
+.login .sign,
+.login form {
+    outline-style: outset;
+
+}
+.signup {
+    max-width: 30rem;
+}
+.signup button {
+    outline-style: outset;
+}
+
+.login .forget_link:hover {
+    text-decoration: underline !important;
+    font-weight: bold;
+}
+.about_intro {
+    height: 50vh;
+    background-image: url(../media/about-us-page-heading.jpg);
+}
+.about_intro h1 {
+    font-size: 4rem;
+}
+.about {
+    height: auto !important;
+}
+.image_div {
+
+    min-width: 30rem;
+}
+.about_content {
+    width: 36%;
+    min-width: 25rem;
+}
+.about_content .line{
+    height: 0.25rem;
+    background-color: #576067;
+}
+.about_content i {
+    width: 3rem;
+    transition: 0.6s;
+}
+.about_content i:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
 @media screen and (max-width: 768px) {
     .deal {
         width: 50%;
         
     }
+    .signup_page,
+    .login_page {
+        height: auto !important;
+    }  
 }
