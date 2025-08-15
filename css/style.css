@@ -2,14 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; 
 }
-.navi {
-    background-color: #576067;
+:root {
+    --primary-color: #576067;
+    --secondary-color: #f3f3f3;
+    --text-color: #ffffff;
 }
+.navi,
 .more,
 .foot {
-    background-color: #576067;
+    background-color: var(--primary-color);
 }
+
+
+/* .carousel-caption {
+    margin-bottom: 9rem !important;
+}
+/* .my_carousel {
+    height: 100vh !important;
+
+
+} */
+/* .carousel-indicators {
+    margin-bottom: 11rem !important;
+} */ 
 .navi div a {
     transition: 0.4s;
 }
@@ -29,6 +46,7 @@
     padding-left: 1.5rem;
     text-transform: uppercase;
 }
+/* home page */
 .slides img {
     filter: brightness(40%);
 }
@@ -38,6 +56,23 @@
 .logo {
     font-size: 6rem;
 }
+
+.latest_products i:hover {
+    color: red !important;
+}
+.latest_products button {
+    transition: 0.5s;
+}
+.latest_products button:hover {
+    transform: scale(1.15);
+    
+}
+.vedio_intro h1 {
+    font-size: 3rem !important;
+}
+
+/* home page end */
+
 .login,
 .signup {
     background-color: #f3f3f3;
@@ -65,9 +100,7 @@
 .about_intro h1 {
     font-size: 4rem;
 }
-.about {
-    height: auto !important;
-}
+
 .image_div {
 
     min-width: 30rem;
@@ -84,18 +117,110 @@
     width: 3rem;
     transition: 0.6s;
 }
+.team_cont {
+    height: auto !important;
+}
 .about_content i:hover {
     color: black !important;
     background-color: white !important;
+
+}
+.service_card {
+    min-width: 20rem;;
+    width: 20%;
+    outline-style: outset;
+    outline-color: whitesmoke;
+}
+.service_card p{
+    width: 90%;
+}
+.service_card img {
+    outline-style: inset;
+    outline-color: whitesmoke;
+}
+.men_main {
+    height: 55vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../media/products-background.jpg);
+    background-size: cover;
+    
+    /* filter: brightness(60%); */
 }
 
+.men_main h1 {
+    font-size: 4rem;
+
+}
+
+.products {
+    width: 85%;
+    transition: 0.8s all !important;
+}
+
+.product_card {
+    /* width: 23%; */
+    min-width: 15rem;   
+    transition: 0.8s all !important;
+}
+
+
+.product_card i:hover {
+    color: red !important;
+}
+.product_card:hover {
+    transform: scale(1.05);
+    background-color: rgb(55, 52, 52);
+    transition: 0.8s all !important;
+}
+.product_card:hover p {
+    color: white !important;
+}
+
+footer .footer_links a:hover {
+    color: rgb(145, 106, 39) !important;
+}
+footer .facebook_icon:hover i{
+    color: rgb(20, 20, 222) !important;
+}
+footer .x_icon:hover i{
+    color: rgb(1, 1, 19) !important;
+}
+footer .whatsapp_icon:hover i{
+    color: green !important;
+}
+footer .youtube_icon:hover i{
+    color: red !important;
+}
+/* .members {
+    min-width: 70rem;
+} */
+
+/* .team_member {
+    min-width: 15rem;
+} */
 @media screen and (max-width: 768px) {
     .deal {
-        width: 50%;
+        width: 80%;
         
     }
     .signup_page,
     .login_page {
         height: auto !important;
     }  
+}
+@media screen and (max-width: 1200px) {
+    .services_cont {
+        height: auto !important;
+    }
+    
+}
+@media screen and (max-width: 992px) {
+    .men_main h1 {
+        font-size: 2.5rem;
+    }
+    .about_intro h1 {
+        font-size: 2.5rem;
+    }
+    .about {
+        height: auto !important;
+    }
 }
